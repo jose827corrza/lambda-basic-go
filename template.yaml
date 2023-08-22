@@ -1,0 +1,18 @@
+AWSTemplateFormatVersion: 2010-09-09
+
+Resources:
+  GoLambda:
+    Type: AWS::Lambda::Function
+    Properties:
+      Architectures: 
+        - "x86_64"
+      Code:
+        S3Bucket: "codepipeline-us-east-1-826951921997"
+        S3Key: "/baby-pipeline-pipeli/BuildArtif/92z1CVO"
+      Description: "Easy descrip"
+      Handler: "build/bootstrap"
+      Role: "arn:aws:iam::164190131261:role/test-lambda-role" # Required
+      Runtime: "go1.x"
+      Tags: 
+        - Key: organization
+          Value: lambda-cloudformation 
