@@ -8,7 +8,7 @@ Resources:
         - "x86_64"
       Code:
         S3Bucket: "codepipeline-us-east-1-826951921997"
-        S3Key: "/baby-pipeline-pipeli/BuildArtif/3Eq6dmi"
+        S3Key: "baby-pipeline-pipeli/BuildArtif/3Eq6dmi"
       Description: "Easy descrip"
       Handler: "build/bootstrap"
       Role: "arn:aws:iam::164190131261:role/test-lambda-role" # Required
