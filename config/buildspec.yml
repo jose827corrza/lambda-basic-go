@@ -14,8 +14,9 @@ phases:
   build:
     commands:
       - GOOS=linux GOARCH=amd64 go build -tags lambda.norpc -o build/bootstrap cmd/main.go
-      - zip myFunction.zip build/bootstrap
+      # - zip myFunction.zip build/bootstrap
 artifacts:
   files:
-    - myFunction.zip
+    - '**/*'
+    # - myFunction.zip
   name: myFunction-$(date +%Y-%m-%d)
