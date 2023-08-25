@@ -21,4 +21,4 @@ artifacts:
     - template.yml
     # - '**/*' # This would include the whole go.tz that was downloaded for the build jaja
     # - myFunction.zip
-  name: myFunction-$(date +%Y-%m-%d)
+  name: myFunction
